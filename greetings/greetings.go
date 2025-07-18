@@ -9,10 +9,10 @@ import (
 func HelloMessage(name string) (string, error) {
 
 	if name == "" {
-		return "", errors.New("Empty name")
+		return "", errors.New("empty name")
 	}
 	// message := fmt.Sprintf("Hello Mr. %v", name)
-	message := fmt.Sprintf(randomMsg(), name)
+	message := fmt.Sprintf(randomMsg())
 
 	return message, nil
 }
