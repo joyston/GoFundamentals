@@ -12,7 +12,7 @@ func HelloMessage(name string) (string, error) {
 		return "", errors.New("empty name")
 	}
 	// message := fmt.Sprintf("Hello Mr. %v", name)
-	message := fmt.Sprintf(randomMsg())
+	message := fmt.Sprintf(randomMsg(), name)
 
 	return message, nil
 }
